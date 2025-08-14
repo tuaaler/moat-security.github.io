@@ -1,0 +1,41 @@
+/* Base resets and utilities - replace the Tailwind CDN */
+/* Copy your existing CSS from the <style> block plus add Tailwind-like utilities */
+/* This ensures faster loading than CDN */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gradient-button {
+    background-image: linear-gradient(to right, #6366f1, #8b5cf6);
+    transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.card-shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.icon-circle {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+
+.strikethrough-price {
+    text-decoration: line-through;
+    color: #94a3b8;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+/* Add your full utility classes here - container, spacing, colors, etc. */
